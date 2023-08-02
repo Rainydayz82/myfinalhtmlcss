@@ -1,0 +1,87 @@
+*{
+    color:white;
+    font-family: 'Kanit', sans-serif;
+}
+body {
+    background-color: black;
+}
+#banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.438),rgb(24, 9, 0)),
+    url("wallpaper.png");
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    }
+.introduction {
+    margin-left: 185px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.mynavitems {
+    color: white;
+}
+.mynavitems :hover {
+    color: black;
+}
+label, .modal-title {
+    color:black;
+}
+.static {
+    font-size: 60px;
+    background: none;
+    border-radius: 0;
+}
+.static:hover {
+    font-size: 70px;
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.795),rgba(255, 255, 255, 0.068),rgba(255, 255, 255, 0));
+    border-radius: 15%;
+}
+.joinusnow {
+    animation-name: joinusnow;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes joinusnow {
+    0% {opacity: 0; margin-top: 150px;}
+    100% {opacity: 1; margin-top: 0px;}
+ }
+ #menubtn {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(189, 25, 25);
+    border-radius: 3px;
+    text-align: center;
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    z-index: 3;
+    cursor: pointer;
+    }   
+#menubtn img {
+    width: 30px;
+    margin-top: 5px;
+    }
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 250px;
+    background: rgb(189, 25, 25);
+    z-index: 2;
+    transition: right 0.5s;
+    }
+nav ul li {
+    list-style: none;
+    margin-left: -30px;
+    margin-top: 120px;
+    font-weight: 200;
+    font-size: 18px
+    }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    }

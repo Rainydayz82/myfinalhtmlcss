@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styleheroes.css">
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+    <nav class="navbar navbar-expand-xl col-12" id="myNavbar">
+      <a class="navbar-brand col-xl-4 col-lg-12" href="index.html"><img class="logo" src="Gallery/logo.png" alt="" style="width:200px"></a>
+      <div class="col-xl-7 col-lg-12">
+        <a href="https://store.steampowered.com/app/570/Dota_2/"><button type="button" class="btn btn-danger mt-2" style="font-weight:800; font-size: 20px; width: 200px; margin-right:120px;background-color: rgb(160, 24, 24);border: none;">Play Dota 2</button></a>
+ 
+        <button type="button" class="btn btn-outline-light mt-2" style="margin-right:10px">Login</button>
+        <button type="button" class="btn btn-outline-light mt-2">Sign Up</button>
+         
+      </div>
+        <a class="col-xl-8 dropdown-toggle mt-2" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="color:white; font-size:12px;">Language</a>
+        <section id="sideNav">
+            <nav>
+                <ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="color: white;text-align:center">
+                          All categories
+                        </a>
+                        <div class="dropdown-menu" style="background-color: rgb(0, 0, 0); border: 1px solid white; width: 230px;">
+                          <a class="dropdown-item mynavitems" href="#">Patches</a>
+                          <a class="dropdown-item mynavitems" href="heroes.html">Heroes</a>
+                          <a class="dropdown-item mynavitems" href="#">Items</a>
+                          <a class="dropdown-item mynavitems" href="#">News</a>
+                          <a class="dropdown-item mynavitems" href="#">Guides</a>
+                          <a class="dropdown-item mynavitems" href="#">Tournaments</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item mynavitems">
+                            <form class="form-inline">
+                              <i class="fas fa-search" style="display: inline"></i>
+                              <input class="form-control mt-2" style="display: inline; width:100%" type="search" placeholder="items, heroes, etc..." aria-label="Search">
+                            </form>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Dotaplus.html" style="color:white;text-align:center">Dota+ Subscription  <img src="Gallery/Dota plus.webp" style="width:15px"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://steamcommunity.com/discussions/" style="color:white;text-align:center">Discussion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://steamcommunity.com/market/" style="color:white;text-align:center">Market</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://store.steampowered.com/" style="color:white;font-size:16px;text-align:center">STEAM <img src="Gallery/steam.png" style="width:25px"></a>
+                      </li>
+                </ul>
+            </nav>
+        </section>
+        <div id="menubtn">
+        <img src="dropdown-icon.png" id="menu">
+        </div>
+        </div>
+    </nav>
+    <section id="banner">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="height:900px">
+                <img src="Gallery/sf.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Nevermore, the Shadow Fiend</h1>
+                  <p>My shadow rises while your shadow falls.</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="height:900px">
+                <img src="Gallery/invoker.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Carl, the Invoker</h1>
+                  <p>A beacon of knowledge blazing out across a black sea of ignorance.</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="height:900px">
+                <img src="Gallery/viper.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Viper, the Netherdrake</h1>
+                  <p>Did you wonder what death was like? Here it is.</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="height:900px">
+                <img src="Gallery/lina.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lina, the Slayer</h1>
+                    <p>One little spark and before you know it, the whole world is burning.</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="height:900px">
+                <img src="Gallery/OD.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Harbinger, the Outworld Destroyer</h1>
+                    <p>Their sanity I'll shatter; their dreams of conquest I'll destroy.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+        </section>
+
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="staticBackdropLabel" style="font-weight: 800;">Razzil Darkbrew, the Alchemist</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="card">
+                  <img class="card-img-top" src="Gallery/alchemist.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h3 class="card-title" style="color:red">Strength Attribute</h3>
+                    <p class="card-text" style="color:black">
+                      Earns extra gold from unit kills and bounty runes.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item" style="color:black">Strength Gain per Level: <img src="Strength_attribute_symbol.webp" alt="">3.1</li>
+                    <li class="list-group-item" style="color:black">Agility Gain per Level: <img src="Agility_attribute_symbol.webp" alt=""> 2.5</li>
+                    <li class="list-group-item" style="color:black">Intelligence Gain per Level: <img src="Intelligence_attribute_symbol.webp" alt=""> 1.7</li>
+                    <li class="list-group-item" style="color:black">
+                      <h3 style="color:black; font-weight: 800;">Skill 1 : ACID SPRAY (Q)</h3>
+                      <br><img src="Gallery/alchemist_acid_spray.png" alt="">
+                      <br><p style="color:black"><h5 style="color:black">Skill Description:</h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Nesciunt, voluptates ex eum culpa consequuntur est quam eaque quis non illo molestiae mollitia? Delectus esse fugit provident doloremque tempora unde illum.</p>
+                        <p style="color:black">
+                          ABILITY: Point Target
+                          <br>DAMAGE TYPE: Physical
+                          <br>PIERCES SPELL IMMUNITY: No
+                          <br>RADIUS: 400.0 / 475.0 / 550.0 / 625.0
+                          <br>DURATION: 15.0
+                          <br>DAMAGE PER SECOND: 25.0 / 30.0 / 35.0 / 40.0
+                          <br>ARMOR REDUCTION: 3.0 / 4.0 / 5.0 / 6.0
+                          <br>COOLDOWN REDUCTION: 22.0 / 21.0 / 20.0 / 19.0
+                          <br>MANA COST: 120
+                          </p>
+                    </li>
+                    <li class="list-group-item" style="color:black">
+                      <h3 style="color:black; font-weight: 800;">Skill 2 : UNSTABLE CONCOCTION (W)</h3>
+                      <br><img src="Gallery/alchemist_unstable_concoction.png" alt="">
+                      <br><p style="color:black"><h5 style="color:black">Skill Description:</h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Nesciunt, voluptates ex eum culpa consequuntur est quam eaque quis non illo molestiae mollitia? Delectus esse fugit provident doloremque tempora unde illum.</p>
+                        <p style="color:black">
+                          ABILITY: Point Target
+                          <br>DAMAGE TYPE: Physical
+                          <br>PIERCES SPELL IMMUNITY: No
+                          <br>RADIUS: 400.0 / 475.0 / 550.0 / 625.0
+                          <br>DURATION: 15.0
+                          <br>DAMAGE PER SECOND: 25.0 / 30.0 / 35.0 / 40.0
+                          <br>ARMOR REDUCTION: 3.0 / 4.0 / 5.0 / 6.0
+                          <br>COOLDOWN REDUCTION: 22.0 / 21.0 / 20.0 / 19.0
+                          <br>MANA COST: 120
+                          </p>
+                    </li>
+                    <li class="list-group-item" style="color:black">
+                      <h3 style="color:black; font-weight: 800;">Skill 3 : CORROSIVE WEAPONRY (E)</h3>
+                      <br><img src="Gallery/alchemist_corrosive_weaponry.png" alt="">
+                      <br><p style="color:black"><h5 style="color:black">Skill Description:</h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Nesciunt, voluptates ex eum culpa consequuntur est quam eaque quis non illo molestiae mollitia? Delectus esse fugit provident doloremque tempora unde illum.</p>
+                        <p style="color:black">
+                          ABILITY: Point Target
+                          <br>DAMAGE TYPE: Physical
+                          <br>PIERCES SPELL IMMUNITY: No
+                          <br>RADIUS: 400.0 / 475.0 / 550.0 / 625.0
+                          <br>DURATION: 15.0
+                          <br>DAMAGE PER SECOND: 25.0 / 30.0 / 35.0 / 40.0
+                          <br>ARMOR REDUCTION: 3.0 / 4.0 / 5.0 / 6.0
+                          <br>COOLDOWN REDUCTION: 22.0 / 21.0 / 20.0 / 19.0
+                          <br>MANA COST: 120
+                          </p>
+                    </li>
+                    <li class="list-group-item" style="color:black">
+                      <h3 style="color:black; font-weight: 800;">Skill 4 : CHEMICAL RAGE (R)</h3>
+                      <br><img src="Gallery/alchemist_chemical_rage.png" alt="">
+                      <br><p style="color:black"><h5 style="color:black">Skill Description:</h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Nesciunt, voluptates ex eum culpa consequuntur est quam eaque quis non illo molestiae mollitia? Delectus esse fugit provident doloremque tempora unde illum.</p>
+                        <p style="color:black">
+                          ABILITY: Point Target
+                          <br>DAMAGE TYPE: Physical
+                          <br>PIERCES SPELL IMMUNITY: No
+                          <br>RADIUS: 400.0 / 475.0 / 550.0 / 625.0
+                          <br>DURATION: 15.0
+                          <br>DAMAGE PER SECOND: 25.0 / 30.0 / 35.0 / 40.0
+                          <br>ARMOR REDUCTION: 3.0 / 4.0 / 5.0 / 6.0
+                          <br>COOLDOWN REDUCTION: 22.0 / 21.0 / 20.0 / 19.0
+                          <br>MANA COST: 120
+                          </p>
+                    </li>
+                  </ul>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <section id="heroesboard">
+        <div class="row mt-5 col-12 justify-content-center ">
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 0, 0);">
+                <img src="Gallery/alchemist.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Alchemist</h2>
+                  <p class="card-text"><img src="Strength_attribute_symbol.webp" alt=""> Strength Attribute</p>
+                  <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Anti-Mage_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Antimage</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 36, 0);">
+                <img src="Gallery/Enigma_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Enigma</h2>
+                  <p class="card-text"><img src="Universal_attribute_symbol.webp" alt=""> Universal Attribute</p>
+                  <a href="#" class="btn btn-warning" style="background-color: orange;color: white">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Spectre_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Spectre</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 25, 49);">
+                <img src="Gallery/Tinker_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Tinker</h2>
+                  <p class="card-text"><img src="Intelligence_attribute_symbol.webp" alt=""> Intelligence Attribute</p>
+                  <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 0, 0);">
+                <img src="Gallery/alchemist.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Alchemist</h2>
+                  <p class="card-text"><img src="Strength_attribute_symbol.webp" alt=""> Strength Attribute</p>
+                  <a href="#" class="btn btn-danger">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Anti-Mage_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Antimage</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 36, 0);">
+                <img src="Gallery/Enigma_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Enigma</h2>
+                  <p class="card-text"><img src="Universal_attribute_symbol.webp" alt=""> Universal Attribute</p>
+                  <a href="#" class="btn btn-warning" style="background-color: orange;color: white">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Spectre_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Spectre</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 25, 49);">
+                <img src="Gallery/Tinker_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Tinker</h2>
+                  <p class="card-text"><img src="Intelligence_attribute_symbol.webp" alt=""> Intelligence Attribute</p>
+                  <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 0, 0);">
+                <img src="Gallery/alchemist.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Alchemist</h2>
+                  <p class="card-text"><img src="Strength_attribute_symbol.webp" alt=""> Strength Attribute</p>
+                  <a href="#" class="btn btn-danger">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Anti-Mage_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Antimage</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 36, 0);">
+                <img src="Gallery/Enigma_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Enigma</h2>
+                  <p class="card-text"><img src="Universal_attribute_symbol.webp" alt=""> Universal Attribute</p>
+                  <a href="#" class="btn btn-warning" style="background-color: orange;color: white">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Spectre_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Spectre</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 25, 49);">
+                <img src="Gallery/Tinker_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Tinker</h2>
+                  <p class="card-text"><img src="Intelligence_attribute_symbol.webp" alt=""> Intelligence Attribute</p>
+                  <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 0, 0);">
+                <img src="Gallery/alchemist.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Alchemist</h2>
+                  <p class="card-text"><img src="Strength_attribute_symbol.webp" alt=""> Strength Attribute</p>
+                  <a href="#" class="btn btn-danger">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Anti-Mage_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Antimage</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 36, 0);">
+                <img src="Gallery/Enigma_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Enigma</h2>
+                  <p class="card-text"><img src="Universal_attribute_symbol.webp" alt=""> Universal Attribute</p>
+                  <a href="#" class="btn btn-warning" style="background-color: orange;color: white">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Spectre_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Spectre</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 25, 49);">
+                <img src="Gallery/Tinker_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Tinker</h2>
+                  <p class="card-text"><img src="Intelligence_attribute_symbol.webp" alt=""> Intelligence Attribute</p>
+                  <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 0, 0);">
+                <img src="Gallery/alchemist.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Alchemist</h2>
+                  <p class="card-text"><img src="Strength_attribute_symbol.webp" alt=""> Strength Attribute</p>
+                  <a href="#" class="btn btn-danger">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Anti-Mage_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Antimage</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 36, 0);">
+                <img src="Gallery/Enigma_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Enigma</h2>
+                  <p class="card-text"><img src="Universal_attribute_symbol.webp" alt=""> Universal Attribute</p>
+                  <a href="#" class="btn btn-warning" style="background-color: orange;color: white">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Spectre_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Spectre</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 25, 49);">
+                <img src="Gallery/Tinker_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Tinker</h2>
+                  <p class="card-text"><img src="Intelligence_attribute_symbol.webp" alt=""> Intelligence Attribute</p>
+                  <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 0, 0);">
+                <img src="Gallery/alchemist.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Alchemist</h2>
+                  <p class="card-text"><img src="Strength_attribute_symbol.webp" alt=""> Strength Attribute</p>
+                  <a href="#" class="btn btn-danger">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Anti-Mage_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Antimage</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(49, 36, 0);">
+                <img src="Gallery/Enigma_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Enigma</h2>
+                  <p class="card-text"><img src="Universal_attribute_symbol.webp" alt=""> Universal Attribute</p>
+                  <a href="#" class="btn btn-warning" style="background-color: orange;color: white">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 49, 7);">
+                <img src="Gallery/Spectre_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Spectre</h2>
+                  <p class="card-text"><img src="Agility_attribute_symbol.webp" alt=""> Agility Attribute</p>
+                  <a href="#" class="btn btn-success">More Info</a>
+                </div>
+            </div>
+            <div class="card col-xl-2 col-lg-3 col-md-4 col-sm-12 ml-3 mr-3 mb-5 p-3 text-center hero" style="width: 18rem; background-color: rgb(0, 25, 49);">
+                <img src="Gallery/Tinker_icon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Tinker</h2>
+                  <p class="card-text"><img src="Intelligence_attribute_symbol.webp" alt=""> Intelligence Attribute</p>
+                  <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn");
+    var sideNav = document.getElementById("sideNav");
+    var menu = document.getElementById("menu");
+    sideNav.style.right = "-250px";
+    menubtn.onclick = function() {
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu. src = "closedropdown.png";
+        }else{
+            sideNav.style.right = "-250px";
+            menu.src = "dropdown-icon.png"
+        }
+    }
+</script>
+</body>
+</html>
